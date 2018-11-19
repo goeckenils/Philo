@@ -1,0 +1,234 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-family: montserrat;
+    font-size: 45;
+    color: #707070
+}
+
+p {
+    font-family: montserrat;
+    font-size: 25;
+    color: #707070
+}
+
+.background {
+    background-image: url(/Assets/Landing.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.object1 {
+    display: block;
+    background: url(/Assets/Wobble1.png);
+    position: absolute;
+    z-index: 2;
+    transform: translateX(-60%);
+    background-position: fixed;
+}
+
+ul {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 90%;
+    margin-top: 60px;
+}
+
+ul li {
+    float: right;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: montserrat;
+    font-size: 25;
+    margin-right: 40px;
+    display: inline-block;
+
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    z-index: 3;
+}
+
+path {
+    stroke: #ffffff;
+    fill: #fff;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 4s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    90% {
+        fill: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+.hd-btn a {
+    position: absolute;
+    border: 1px white solid;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    font-family: montserrat;
+}
+
+.über-mich {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.msg {
+    padding: 200;
+    width: 500px;
+    height: 275px;
+
+}
+
+.ava {
+    float: right;
+
+}
+
+.icons {
+    color: #707070;
+}
+
+.icons a {
+    margin: 10;
+}
+
+.musik {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.sc-btn a {
+    border: 1px #707070 solid;
+    color: #707070;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    font-family: montserrat;
+    margin-top: 20px;
+}
+
+iframe {
+    margin-top: 40px;
+}
+
+.kontakt {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
+.contact-form {
+    position: absolute;
+    left: 50%;
+    width: 85%;
+    margin-left: -300px;
+    max-width: 600px;
+    background: #fff;
+    position: absolute;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    font-family: montserrat;
+    color: #707070;
+    margin-bottom: 10%;
+}
+
+.txtb {
+    border: 2px solid #707070;
+    margin: 8px;
+    padding: 12px 18px;
+    font-size: 25px;
+}
+
+.txtb label {
+    display: block;
+    text-align: left;
+}
+
+.txtb input,
+.txtb textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 6px;
+}
+
+.txtb input placeholder {
+    color: white;
+}
+
+.send-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0px;
+    color: #707070;
+    text-decoration: none;
+    font-weight: bold;
+}
