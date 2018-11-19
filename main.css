@@ -27,18 +27,9 @@ p {
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
-    z-index: 1;
+
 }
 
-.object1 {
-    display: block;
-    background: url(/Assets/Wobble1.png);
-    position: absolute;
-    z-index: 2;
-    transform: translateX(-60%);
-    background-position: fixed;
-}
 
 ul {
     position: absolute;
@@ -69,7 +60,7 @@ ul li a {
     top: 44%;
     transform: translate(-50%, -50%);
     width: 45%;
-    z-index: 3;
+
 }
 
 path {
